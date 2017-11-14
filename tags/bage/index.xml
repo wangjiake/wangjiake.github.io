@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bage on 游动的木鱼</title>
+    <link>https://wangjiake.github.io/tags/bage/</link>
+    <description>Recent content in Bage on 游动的木鱼</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Nov 2017 01:02:33 +0200</lastBuildDate>
+    
+	<atom:link href="https://wangjiake.github.io/tags/bage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>杂谈</title>
+      <link>https://wangjiake.github.io/post/bage/</link>
+      <pubDate>Fri, 10 Nov 2017 01:02:33 +0200</pubDate>
+      
+      <guid>https://wangjiake.github.io/post/bage/</guid>
+      <description>婚姻会是爱情的坟墓么.</description>
+    </item>
+    
+  </channel>
+</rss>

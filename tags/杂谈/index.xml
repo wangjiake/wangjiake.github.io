@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>杂谈 on 游动的木鱼</title>
+    <link>https://wangjiake.github.io/tags/%E6%9D%82%E8%B0%88/</link>
+    <description>Recent content in 杂谈 on 游动的木鱼</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 Nov 2017 14:13:22 +0200</lastBuildDate>
+    
+	<atom:link href="https://wangjiake.github.io/tags/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>博客</title>
+      <link>https://wangjiake.github.io/post/new_blog/</link>
+      <pubDate>Sat, 11 Nov 2017 14:13:22 +0200</pubDate>
+      
+      <guid>https://wangjiake.github.io/post/new_blog/</guid>
+      <description>欲修身，先养心,拖延了几年的博客还是要搭起来,很多事情很简单,就是懒.</description>
+    </item>
+    
+  </channel>
+</rss>
