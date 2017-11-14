@@ -13,19 +13,8 @@
   </url>
   
   <url>
-    <loc>https://wangjiake.github.io/post/bage/</loc>
-    <lastmod>2017-11-10T01:02:33+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wangjiake.github.io/tags/</loc>
     <lastmod>2015-06-20T14:02:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wangjiake.github.io/tags/bage/</loc>
-    <lastmod>2017-11-10T01:02:33+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -35,6 +24,12 @@
   
   <url>
     <loc>https://wangjiake.github.io/post/</loc>
+    <lastmod>2017-11-11T14:13:22+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiake.github.io/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2017-11-11T14:13:22+02:00</lastmod>
     <priority>0</priority>
   </url>
