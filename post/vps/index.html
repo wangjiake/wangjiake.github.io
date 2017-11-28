@@ -1,0 +1,352 @@
+    <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="游动的木鱼">
+		<meta name="description" content="博客简介">
+		<meta name="generator" content="Hugo 0.30.2" />
+		<title>科学上网很舒服 &middot; 游动的木鱼</title>
+		<link rel="shortcut icon" href="https://jkweb.wang/images/favicon.ico">
+		<link rel="stylesheet" href="https://jkweb.wang/css/style.css">
+		<link rel="stylesheet" href="https://jkweb.wang/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://jkweb.wang/css/font-awesome.min.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+     
+    <a href='https://jkweb.wang/'> 首页</a> 
+    <a href='https://jkweb.wang/post'>目录</a>
+    <a href='https://jkweb.wang/tags'>分类</a>
+    <a href='https://jkweb.wang/about'>关于我</a>  
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        科学上网很舒服
+                    </h1>
+                    <h2 class="headline">
+                    Nov 28, 2017 14:22
+                    · 272 words
+                    · 2 minutes read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://jkweb.wang/tags/vps">VPS</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<h4 id="梳理一下最近玩儿的">梳理一下最近玩儿的</h4>
+
+<blockquote>
+<p>1.Tampermonkey</p>
+</blockquote>
+
+<p>一个管理插件合集,配合插件库可以很舒服的上网<br />
+如果能正常访问 Chrome 应用商店，可以直接在商店内下载 <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a>。</p>
+
+<p>如果不能,<a href="http://tampermonkey.net/crx/tm_legacy.crx">点击下载</a><br />
+安装好后配合插件库<br />
+<a href="https://openuserjs.org/">墙外</a><br />
+<a href="https://greasyfork.org/zh-CN/scripts">墙内</a><br />
+很多很实用的插件去除广告、推广、贴吧微博垃圾广告信息,flash转换h5播放器,视频vip和各大网盘资源下载一系列有用插件,更舒服的上网,顺带可以反馈bug和查看js源码,没事可以学习一下</p>
+
+<blockquote>
+<p>2.aira2</p>
+</blockquote>
+
+<p>mac下,优秀的下载软件(前几天才续费的迅雷要抛弃了),配合Tampermonkey可以各大平台不限速下载(百度,115等会员也可以考虑不用开通了)</p>
+
+<h3 id="1-安装aira2">1.安装aira2</h3>
+
+<p>在终端输入命令：</p>
+
+<p><code>brew install aria2</code></p>
+
+<h3 id="2-设置配置文件">2.设置配置文件</h3>
+
+<p>创建文件夹配置文件</p>
+
+<p><code>cd ~</code></p>
+
+<p><code>mkdir .aria2</code></p>
+
+<p><code>cd .aria2</code></p>
+
+<p><code>touch aria2.conf</code></p>
+
+<p><code>sudo vi aria2.conf</code></p>
+
+<p>编辑文件,把下面的配置粘贴进去,需要修改dir的下XXX为你的用户名</p>
+
+<pre><code>#用户名  
+#rpc-user=user  
+#密码  
+#rpc-passwd=passwd
+#上面的认证方式不建议使用,建议使用下面的token方式
+#设置加密的密钥
+#rpc-secret=token
+#允许rpc
+enable-rpc=true
+#允许所有来源, web界面跨域权限需要
+rpc-allow-origin-all=true
+#允许外部访问，false的话只监听本地端口
+rpc-listen-all=true
+#RPC端口, 仅当默认端口被占用时修改
+#rpc-listen-port=6800
+#最大同时下载数(任务数), 路由建议值: 3
+max-concurrent-downloads=5
+#断点续传
+continue=true
+#同服务器连接数
+max-connection-per-server=5
+#最小文件分片大小, 下载线程数上限取决于能分出多少片, 对于 小文件重要
+min-split-size=10M
+#单文件最大线程数, 路由建议值: 5
+split=10
+#下载速度限制
+max-overall-download-limit=0
+#单文件速度限制
+max-download-limit=0
+#上传速度限制
+max-overall-upload-limit=0
+#单文件速度限制
+max-upload-limit=0
+#断开速度过慢的连接
+#lowest-speed-limit=0
+#验证用，需要1.16.1之后的release版本
+#referer=*
+#文件保存路径, 默认为当前启动位置
+dir=/Users/xxx/Downloads
+#文件缓存, 使用内置的文件缓存, 如果你不相信Linux内核文件   缓存和磁盘内置缓存时使用, 需要1.16及以上版本
+#disk-cache=0
+#另一种Linux文件缓存方式, 使用前确保您使用的内核支持此选项, 需要1.15及以上版本(?)
+#enable-mmap=true
+#文件预分配, 能有效降低文件碎片, 提高磁盘性能. 缺点是预分配时间较长
+#所需时间 none &lt; falloc ? trunc « prealloc, falloc和trunc需要文件系统和内核支持
+file-allocation=prealloc
+</code></pre>
+
+<p>编辑完成后保存退出.</p>
+
+<h3 id="3-启动-rpc-模式">3.启动 RPC 模式</h3>
+
+<p>在终端输入 <code>aria2c --conf-path=&quot;/Users/xxxxxx/.aria2/aria2.conf&quot; -D</code><br />
+然后 aria2 就启动了.</p>
+
+<h3 id="4-配置百度网盘">4.配置百度网盘</h3>
+
+<p>下载安装Aria2GUI.dmg，位于网盘的Aria2 for Mac文件夹中,或者 github 地址：<a href="https://github.com/yangshun1029/aria2gui/releases/">aria2gui mac 1.3.5客户端</a>。</p>
+
+<p>首先下载<a href="https://github.com/acgotaku/BaiduExporter">BaiduExporter 0.8.5</a> Chrome 浏览器插件,然后解压下载好的文件，打开 Chrome 浏览器，点击浏览器右上角设置-&gt;扩展程序，把开发者模式打上勾，最后把文件夹中的 chrome.crx往 Chrome 中拖，一直点击下一步下一步的节奏。打开Aria2GUI，然后打开需要下载的百度云盘的分享链接，会发现网页上下载按钮旁边多出一个「导出下载」按钮，点击它弹出的「ARIA2 RPC」就自动添加到你的下载队列里了。</p>
+
+<p>网页配置就不建议折腾了,比较懒.</p>
+
+<h3 id="5-配置115">5.配置115</h3>
+
+<p><a href="https://greasyfork.org/zh-CN/scripts">墙内</a>  找到115网盘插件,获取地址后下载.</p>
+
+<blockquote>
+<p>3.VPS</p>
+</blockquote>
+
+<h4 id="vultr-https-my-vultr-com"><a href="https://my.vultr.com/">vultr</a></h4>
+
+<p>&emsp;安利一个便宜的,2.5$/month,貌似前段时间没有注册就送20$的活动后大降价,来晚了的我的没有抢到东京的就只有挑剩下的2个了,迈阿密和纽约,</p>
+
+<p><a href="https://github.com/iMeiji/shadowsocks_install/wiki/shadowsocksR-%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85">懒人一键安装</a></p>
+
+<p>默认配置：<br />
+服务器端口：自己设定（如不设定，默认为 8989<br />
+密码：自己设定（如不设定，默认为 teddysun.com）<br />
+加密方式：自己设定（如不设定，默认为 aes-256-cfb）<br />
+协议（Protocol）：自己设定（如不设定，默认为 origin）<br />
+混淆（obfs）：自己设定（如不设定，默认为 plain）</p>
+
+<h5 id="root连接后运行">root连接后运行</h5>
+
+<p><code>wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh</code></p>
+
+<p><code>chmod +x shadowsocksR.sh
+</code></p>
+
+<p><code>./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log
+</code></p>
+
+<h5 id="安装完成后-脚本提示如下">安装完成后，脚本提示如下：</h5>
+
+<pre><code>Congratulations, ShadowsocksR server install completed!
+Your Server IP        :your_server_ip
+Your Server Port      :your_server_port
+Your Password         :your_password
+Your Protocol         :your_protocol
+Your obfs             :your_obfs
+Your Encryption Method:your_encryption_method
+
+Welcome to visit:https://shadowsocks.be/9.html
+Enjoy it!
+</code></pre>
+
+<h5 id="卸载方法">卸载方法：</h5>
+
+<p>使用 root 用户登录，运行命令：<code>./shadowsocksR.sh uninstall</code>
+安装完成后即已后台启动 ShadowsocksR ，运行：<code>/etc/init.d/shadowsocks status</code>可以查看 ShadowsocksR 进程是否已经启动。<br />
+本脚本安装完成后，已将 ShadowsocksR 自动加入开机自启动。<br />
+使用命令：<br />
+启动：<code>/etc/init.d/shadowsocks start</code><br />
+停止：<code>/etc/init.d/shadowsocks stop</code><br />
+重启：<code>/etc/init.d/shadowsocks restart</code><br />
+状态：<code>/etc/init.d/shadowsocks status</code></p>
+
+<p>配置文件路径：<code>/etc/shadowsocks.json</code><br />
+日志文件路径：<code>/var/log/shadowsocks.log</code><br />
+代码安装目录：<code>/usr/local/shadowsocks</code></p>
+
+<p>后发现速度一般,然而比之前试过的某些快点.</p>
+
+<p>解决速度慢的办法除了速锐之外,翻到了一个<br />
+<a href="https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95">BBR拥塞控制算法</a><br />
+强力安利很好用<br />
+举例 CentOS 6 (其他版本请看文档)<br />
+下载更换内核<br />
+最新内核查看<a href="http://elrepo.org/linux/kernel/el6/x86_64/RPMS/">这里</a></p>
+
+<pre><code>rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+rpm -Uvh http://www.elrepo.org/elrepo-release-6-8.el6.elrepo.noarch.rpm
+yum --enablerepo=elrepo-kernel install kernel-ml -y
+</code></pre>
+
+<p>查看内核是否安装成功</p>
+
+<pre><code>    rpm -qa | grep kernel
+</code></pre>
+
+<p>删除旧内核(可选)</p>
+
+<pre><code>    rpm -ev 旧内核  
+</code></pre>
+
+<p>更新 grub 系统引导文件并重启</p>
+
+<pre><code>    sed -i 's:default=.*:default=0:g' /etc/grub.conf
+    reboot
+</code></pre>
+
+<p>安装完成后不要忘记修改 /boot/grub/menu.lst 和 /etc/grub.conf，将这两个文件中旧内核的启动项删除即可避免无法重启的问题</p>
+
+<p>更新到最新版内核</p>
+
+<pre><code>    yum --enablerepo=elrepo-kernel update -y        
+    reboot
+</code></pre>
+
+                </section>
+            </article>
+
+            
+
+            
+                
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'wangjiake'; 
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+                
+            
+
+            
+
+            <footer id="footer">
+     <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.facebook.com/profile.php?id=100007734421720">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/wangjiake">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://twitter.com/nuo_jk">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+
+
+</div>
+ 
+    <p class="small">
+         © Copyright 2017 <i class="fa fa-heart" aria-hidden="true"></i> 游动的木鱼 
+    </p>
+    <p class="small">
+        Powered by <a href="https://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+        </section>
+
+        <script src="https://jkweb.wang/js/jquery-2.2.4.min.js"></script>
+<script src="https://jkweb.wang/js/main.js"></script>
+<script src="https://jkweb.wang/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-109833169-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+
+<script>
+var baiduAnalytics = '22d74af596f43f0f96b5460b83a20123';
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?" + baiduAnalytics;
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+    </body>
+</html>
