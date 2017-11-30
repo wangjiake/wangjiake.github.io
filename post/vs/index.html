@@ -62,24 +62,23 @@
             </article>
 
             
-
-            
                 
-                    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'wangjiake'; 
-
-     
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        owner: 'wangjiake',
+        repo: 'wangjiake.github.io',
+        oauth: {
+            client_id: 'abe23ded730f2e7765ca',
+            client_secret: 'aa8089be8086cf7398349dafb013ada6792d35fe',
+        },
+    })
+    gitment.render('container')
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
+            
 
-                
             
 
             
