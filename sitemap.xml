@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jkweb.wang/post/java/</loc>
+    <lastmod>2017-12-14T15:20:02+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jkweb.wang/post/https_img/</loc>
     <lastmod>2017-11-29T17:06:38+08:00</lastmod>
   </url>
@@ -79,8 +84,20 @@
   </url>
   
   <url>
+    <loc>https://jkweb.wang/tags/java/</loc>
+    <lastmod>2017-12-14T15:20:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jkweb.wang/categories/mac-for-java/</loc>
+    <lastmod>2017-12-14T15:20:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jkweb.wang/post/</loc>
-    <lastmod>2017-11-29T17:06:38+08:00</lastmod>
+    <lastmod>2017-12-14T15:20:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -122,7 +139,7 @@
   
   <url>
     <loc>https://jkweb.wang/</loc>
-    <lastmod>2017-11-29T17:06:38+08:00</lastmod>
+    <lastmod>2017-12-14T15:20:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
