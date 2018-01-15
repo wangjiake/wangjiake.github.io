@@ -7,7 +7,7 @@
 		<meta name="author" content="游动的木鱼">
 		<meta name="description" content="博客简介">
 		<meta name="generator" content="Hugo 0.30.2" />
-		<title>Hogo github自定义站点迁移到https &middot; 游动的木鱼</title>
+		<title>Frustrate &middot; 游动的木鱼</title>
 		<link rel="shortcut icon" href="https://jkweb.wang/images/favicon.ico">
 		<link rel="stylesheet" href="https://jkweb.wang/css/style.css">
 		<link rel="stylesheet" href="https://jkweb.wang/css/highlight.css">
@@ -33,17 +33,17 @@
             <article class="post">
                 <header>
                     <h1>
-                        Hogo github自定义站点迁移到https
+                        Frustrate
                     </h1>
                     <h2 class="headline">
-                    Nov 17, 2017 14:08
-                    · 36 words
+                    Jan 15, 2018 09:54
+                    · 39 words
                     · 1 minute read
                       <span class="tags">
                       
                       
                           
-                              <a href="https://jkweb.wang/tags/https">Https</a>
+                              <a href="https://jkweb.wang/tags/%E4%BA%BA%E7%94%9F">人生</a>
                           
                       
                       
@@ -52,46 +52,28 @@
                 </header>
                 
                 <section id="post-body">
-                    
+                    <p>至今貌似遇到了很多瓶颈,前天被失恋了,每天烦着写jsp,开年决定辞职(失业),</p>
 
-<h2 id="hogo-github自定义站点迁移到https">Hogo github自定义站点迁移到https</h2>
+<p>每晚焦躁得睡不着,然而白天忙着改底层,循环的进入了一个轮回期,<br />
+长此以往怕是会滋生抑郁,<br />
+周六意识到问题的严重性,昨晚思考了一下为什么会这样子,</p>
 
-<p>刚搭建了hugo+github个人博客,偏好自定义域名,无奈是http看着这个灰色的感叹号特别不爽,于是准备迁移到小绿锁,看了网上大神若干文章,上手Cloudflare</p>
+<p>首先 我害怕失败, 总是会想到失败会面临什么,会尽可能的去掉潜在威胁,然而感情不是这样的,不合就是不合,用胶带堵住有裂隙的水坝只是一时,还是会决堤的,<br />
+  其次,焦躁,烦躁,暴躁,3躁,很多能用es6一句话解决的每天要去写原生底层,很多无意义的代码多如牛毛,每天被迫加班,效率地下,仿佛从青铜时代回到石器时代一样,<br />
+  以前回家还能看看趋势,写写demo,现在只能每天回家打一把游戏,把郁闷挥发一下,睡觉！ + 失恋 = 睡不着 ！！！</p>
 
-<blockquote>
-<p>Status: Website not active (DNS modification pending)</p>
-</blockquote>
+<p>这已经不是为第一次这样了,当你毕业的时候,面对找工作只是少了一份失恋多了一份迷茫而已,<br />
+  总结一下问题</p>
 
-<h3 id="what-f-uck">What F(uck)?</h3>
+<p>解决问题</p>
 
-<p>苦等24小时无果秒转阵地
-#Netlify
-不用繁琐等待只要10分钟左右就安全加锁<br />
-1.注册一个 Netlify 帐号，地址 <a href="https://app.netlify.com/">Netlify App</a> 选择用 GitHub 注册就好了。
-2.新建一个站点
-<img src="https://tu-img-1.aixinxi.net/o_1c03fkjuk6k48a51h2ujuc1lona.png-w.jpg" alt="" />
-3.
-然后选用github根据提示 1 2 3步就好
-<img src="https://tu-img-1.aixinxi.net/o_1c03flsc01qljvfgjv1nn718pca.png-w.jpg" alt="" />
-<img src="https://tu-img-1.aixinxi.net/o_1c03fmgr41c061ph01mjh1q771ak0a.png-w.jpg" alt="" />
-<img src="https://tu-img-1.aixinxi.net/o_1c03fn70dpchhvb3ek6ak1lvqa.png-w.jpg" alt="" />
-4.由于是把你的项目从git上面克隆下来,但是名字是随机生成的所以需要你自己修改一个短名
-<img src="https://tu-img-1.aixinxi.net/o_1c03fnpda17a7oqesav16io12dqa.png-w.jpg" alt="" />
-<img src="https://tu-img-1.aixinxi.net/o_1c03foh961pfdd521dul15ni188ga.png-w.jpg" alt="" />
-<img src="https://tu-img-1.aixinxi.net/o_1c03fp5731unlnl1mj6b1o17f1a.png-w.jpg" alt="" />
-5.修改好了,但是这个https是它提供的和git一样的接下来要迁移到我们自己的域名</p>
-
-<p><img src="https://tu-img-1.aixinxi.net/o_1c03fpmao1tes1g8e15irnfk18oda.png-w.jpg" alt="" />
-6.在这里输入你自己的域名,但是肯定会报错因为并没有解析,会给你一个DNS地址你需要添加到你自己的云解析里面
-<img src="https://tu-img-1.aixinxi.net/o_1c03fq86r1n2jnl713mn1u38k0qa.png-w.jpg" alt="" />
-7.添加到云解析后再返回来保存然后选择下面的https点击第一个根据提示会出现小圆锁转动，等待ing
-<img src="https://tu-img-1.aixinxi.net/o_1c03fquse1u131pln1nnhj2l141la.png-w.jpg" alt="" />
-8.会提示https成功
-<img src="https://tu-img-1.aixinxi.net/o_1c03frj7q19o11e00137v100k1oqla.png-w.jpg" alt="" />
-9.最后,看一看原谅锁
-<img src="https://tu-img-1.aixinxi.net/o_1c03fs9cm1hle1n5hk3811scmkia.png-w.jpg" alt="" /></p>
-
-<p>参考文章:<a href="https://jaeger.itscoder.com/web/2017/08/30/github-page-https">写代码的猴子</a></p>
+<ul>
+<li>1、 睡觉 睡觉 睡觉 强迫让自己入睡 保持充足的睡眠</li>
+<li>2、 吃饭 吃饭 吃饭 这几天每天日夜颠倒 上顿没下顿</li>
+<li>3、 鼓励自己 失败不可怕没有人不失败的,失败了那么多次只要成功一次就好了,况且从过去到现在你成功不止一次</li>
+<li>4、 冷静  冲动是魔鬼,生活如此不容易,还是冷静处理事情</li>
+<li>5、 致开年的自己 —— 加油2018</li>
+</ul>
 
                 </section>
             </article>
