@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jkweb.wang/post/webpackverb/</loc>
+    <lastmod>2018-02-08T17:22:47+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jkweb.wang/post/2018/</loc>
     <lastmod>2018-01-18T09:53:13+08:00</lastmod>
   </url>
@@ -105,7 +110,7 @@
   
   <url>
     <loc>https://jkweb.wang/categories/ide/</loc>
-    <lastmod>2017-11-23T15:27:24+08:00</lastmod>
+    <lastmod>2018-02-08T17:22:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -129,7 +134,7 @@
   
   <url>
     <loc>https://jkweb.wang/post/</loc>
-    <lastmod>2018-01-18T09:53:13+08:00</lastmod>
+    <lastmod>2018-02-08T17:22:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -148,6 +153,12 @@
   <url>
     <loc>https://jkweb.wang/tags/vs-code/</loc>
     <lastmod>2017-11-23T15:27:24+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jkweb.wang/tags/webpack/</loc>
+    <lastmod>2018-02-08T17:22:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -177,7 +188,7 @@
   
   <url>
     <loc>https://jkweb.wang/</loc>
-    <lastmod>2018-01-18T09:53:13+08:00</lastmod>
+    <lastmod>2018-02-08T17:22:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
