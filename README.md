@@ -1,1 +1,1 @@
-[游动的木鱼](https://jkweb.wang)
+[游动的木鱼](https://jknoweb.club)
