@@ -15,7 +15,9 @@
 
 		
 		<link rel="stylesheet" href="https://jknoweb.club/css/font-awesome.min.css">
-		
+        <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+        <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
+        <script src="https://vjs.zencdn.net/http-streaming/latest/videojs-http-streaming.min.js"></script>
 
 		
 	</head>
@@ -33,7 +35,7 @@
             <article class="post">
                 <header>
                     <h1>
-                        Webpack优化打包
+                        Webpack优化打包11111
                     </h1>
                     <h2 class="headline">
                     Feb 8, 2018 17:22
@@ -59,7 +61,7 @@
 <li>局部打包,用什么打包什么</li>
 <li>公共代码提取</li>
 <li>插件代码压缩</li>
-<li>减少编译路径</li>
+<li>减少编译路径1</li>
 </ul>
 
                 </section>
@@ -67,6 +69,16 @@
 
             
                 <div id="container"></div>
+                <video
+                    id="my-video"
+                    class="video-js vjs-default-skin"
+                    controls
+                    preload="auto"
+                    width="640"
+                    height="360"
+                    data-setup='{}'>
+                    <source src="https://f005.backblazeb2.com/file/666666d/mixed.m3u8" type="application/x-mpegURL">
+                </video>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
@@ -147,6 +159,11 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
+</script>
+
+<script>
+    var player = videojs('my-video');
+    player.play();
 </script>
 
 
